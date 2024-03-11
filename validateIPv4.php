@@ -15,7 +15,7 @@ function check($octet)
 {
     $isValid = false;
 
-    if ($octet < 999) {
+    if ($octet < 255) {
         if ($octet[0] != 0 && $octet < 9) {
             $isValid = true;
         }
