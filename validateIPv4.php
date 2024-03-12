@@ -4,7 +4,7 @@ function validIP($ip)
     $split = explode(".", $ip);
     if (sizeof($split) == 4) {
         for ($i = 0; $i < sizeof($split); $i++) {
-            if(check($split)){
+            if(check($split[$i])){
                 $valid = true;
             }; 
         }
